@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ihsantl.github.io/static/css/main.082cc919.css",
-    "main.js": "/ihsantl.github.io/static/js/main.aedea3a0.js",
+    "main.js": "/ihsantl.github.io/static/js/main.41b0a1a7.js",
     "static/js/453.f19e9853.chunk.js": "/ihsantl.github.io/static/js/453.f19e9853.chunk.js",
     "static/media/NotoSans-Italic-VariableFont_wdth,wght.ttf": "/ihsantl.github.io/static/media/NotoSans-Italic-VariableFont_wdth,wght.628d4779d07f4e15066b.ttf",
     "static/media/NotoSans-VariableFont_wdth,wght.ttf": "/ihsantl.github.io/static/media/NotoSans-VariableFont_wdth,wght.b1d0ab70303caea663db.ttf",
@@ -9,11 +9,11 @@
     "static/media/NotoSansThai-VariableFont_wdth,wght.ttf": "/ihsantl.github.io/static/media/NotoSansThai-VariableFont_wdth,wght.1e59d809989f6b9c505a.ttf",
     "index.html": "/ihsantl.github.io/index.html",
     "main.082cc919.css.map": "/ihsantl.github.io/static/css/main.082cc919.css.map",
-    "main.aedea3a0.js.map": "/ihsantl.github.io/static/js/main.aedea3a0.js.map",
+    "main.41b0a1a7.js.map": "/ihsantl.github.io/static/js/main.41b0a1a7.js.map",
     "453.f19e9853.chunk.js.map": "/ihsantl.github.io/static/js/453.f19e9853.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.082cc919.css",
-    "static/js/main.aedea3a0.js"
+    "static/js/main.41b0a1a7.js"
   ]
 }
