@@ -1,16 +1,19 @@
 {
   "files": {
-    "main.css": "/ihsantl.github.io/static/css/main.f855e6bc.css",
-    "main.js": "/ihsantl.github.io/static/js/main.b7b81329.js",
+    "main.css": "/ihsantl.github.io/static/css/main.082cc919.css",
+    "main.js": "/ihsantl.github.io/static/js/main.aedea3a0.js",
     "static/js/453.f19e9853.chunk.js": "/ihsantl.github.io/static/js/453.f19e9853.chunk.js",
-    "static/media/logo.svg": "/ihsantl.github.io/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/NotoSans-Italic-VariableFont_wdth,wght.ttf": "/ihsantl.github.io/static/media/NotoSans-Italic-VariableFont_wdth,wght.628d4779d07f4e15066b.ttf",
+    "static/media/NotoSans-VariableFont_wdth,wght.ttf": "/ihsantl.github.io/static/media/NotoSans-VariableFont_wdth,wght.b1d0ab70303caea663db.ttf",
+    "static/media/profile.jpg": "/ihsantl.github.io/static/media/profile.c6c3415f98c9958536a4.jpg",
+    "static/media/NotoSansThai-VariableFont_wdth,wght.ttf": "/ihsantl.github.io/static/media/NotoSansThai-VariableFont_wdth,wght.1e59d809989f6b9c505a.ttf",
     "index.html": "/ihsantl.github.io/index.html",
-    "main.f855e6bc.css.map": "/ihsantl.github.io/static/css/main.f855e6bc.css.map",
-    "main.b7b81329.js.map": "/ihsantl.github.io/static/js/main.b7b81329.js.map",
+    "main.082cc919.css.map": "/ihsantl.github.io/static/css/main.082cc919.css.map",
+    "main.aedea3a0.js.map": "/ihsantl.github.io/static/js/main.aedea3a0.js.map",
     "453.f19e9853.chunk.js.map": "/ihsantl.github.io/static/js/453.f19e9853.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.b7b81329.js"
+    "static/css/main.082cc919.css",
+    "static/js/main.aedea3a0.js"
   ]
 }
