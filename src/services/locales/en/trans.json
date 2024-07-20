@@ -1,0 +1,35 @@
+{
+    "lang_en": "English",
+    "lang_th": "Thai",
+    "ihsan taleh": "Ihsan Taleh",
+    "ihsan": "Ihsan",
+    "taleh": "Taleh",
+
+    "personal": "personal",
+    "name":"Name",
+    "birth_day":"Birth day",
+    "birth_day_d":"10 June 1996",
+    "age":"Age",
+    "age_d":"28 years old",
+    "religion":"Religion",
+    "islam":"Islam",
+    "nationality":"Nationality",
+    "thai":"Thai",
+    "gender":"Gender",
+    "man":"Man",
+    "hobby":"Hobby",
+    "hobby_d":"Play games, exercise",
+    "home_town":"Home town",
+    "yala":"Yala",
+
+    "experience":"experience",
+
+    "education":"education",
+
+    "skill":"skill",
+
+    "contact":"contact",
+
+    "apologize": "apologize",
+    "page_not_found": "page not found"
+}
