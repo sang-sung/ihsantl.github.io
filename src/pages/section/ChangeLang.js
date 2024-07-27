@@ -13,9 +13,11 @@ function ChangeLang({ t }) {
   };
 
   return (
-    <div className={`absolute top-3 right-3 flex flex-col items-end gap-3`}>
+    <div
+      className={`absolute top-2 right-2 md:top-3 md:right-3 flex flex-col items-end gap-3`}
+    >
       <div
-        className={`gap-0 bg-[#ebebeb] rounded-md grid grid-cols-2 w-[150px]`}
+        className={`gap-0 bg-[#ebebeb] rounded-md overflow-hidden grid grid-cols-2 w-[100px] md:w-[160px]`}
       >
         {[
           { lang: "th", text: "lang_th" },
@@ -24,8 +26,10 @@ function ChangeLang({ t }) {
           return (
             <button
               key={i}
-              className={`w-full py-1 rounded-md text-base font-medium ${
-                currentLanguage === val.lang ? "bg-custom-800 text-white" : "text-custom-800"
+              className={`w-full py-1 md:py-1 text-[12px] md:text-base font-medium ${
+                currentLanguage === val.lang
+                  ? "bg-custom-800 text-white"
+                  : "text-custom-800"
               }`}
               onClick={() => {
                 onChangLang(val.lang);
