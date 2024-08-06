@@ -27,8 +27,8 @@ function Experience({ t }) {
       // position: "Front-End Developer",
       contentLs: [
         {
-          head: t("responsibilities"),
-          list: [t("goody_1"), t("goody_2")],
+          head: t("the_website_that_has_been_developed"),
+          list: [t("wadil_1"), t("wadil_2")],
         },
       ],
       frameWork: [
