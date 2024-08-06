@@ -5,9 +5,11 @@ import { Modal } from "../components/Modal";
 
 import imgAngular from "../../assets/logo/logo-angular.png";
 import imgCss from "../../assets/logo/logo-css.png";
+import imgExpress from "../../assets/logo/logo-express.png";
 import imgHtml from "../../assets/logo/logo-html.png";
 import imgJs from "../../assets/logo/logo-js.png";
 import imgLaravel from "../../assets/logo/logo-laravel.png";
+import imgNodejs from "../../assets/logo/logo-nodejs2.png";
 import imgPhp from "../../assets/logo/logo-php.png";
 import imgReact from "../../assets/logo/logo-react.png";
 import imgSql from "../../assets/logo/logo-sql.png";
@@ -19,6 +21,37 @@ function Experience({ t }) {
   const [dataModal, setDataModal] = useState();
 
   const ExpLs = [
+    {
+      companyName: "Wadil Aqeeq",
+      period: "FREELAND",
+      // position: "Front-End Developer",
+      contentLs: [
+        {
+          head: t("responsibilities"),
+          list: [t("goody_1"), t("goody_2")],
+        },
+      ],
+      frameWork: [
+        {
+          head: "Fron-End",
+          list: [
+            { text: "React", icon: imgReact },
+            { text: "HTML", icon: imgHtml },
+            { text: "CSS", icon: imgCss },
+            { text: "JS", icon: imgJs },
+            { text: "Tailwind", icon: imgTailwind },
+          ],
+        },
+        {
+          head: "Back-End",
+          list: [
+            { text: "NodeJS", icon: imgNodejs },
+            { text: "ExpressJS", icon: imgExpress },
+            { text: "JS", icon: imgJs },
+          ],
+        },
+      ],
+    },
     {
       companyName: t("goody"),
       period: t("oct2023_present"),
@@ -211,11 +244,14 @@ function Experience({ t }) {
                   <span className="font-semibold">{t("period") + ": "}</span>
                   {dataModal.period}
                 </p>
-                <p className="">
-                  {" "}
-                  <span className="font-semibold">{t("position") + ": "}</span>
-                  {dataModal.position}
-                </p>
+                {dataModal.position && (
+                  <p className="">
+                    <span className="font-semibold">
+                      {t("position") + ": "}
+                    </span>
+                    {dataModal.position}
+                  </p>
+                )}
               </div>
               {dataModal.contentLs &&
                 dataModal.contentLs.map((val, i) => {
@@ -238,23 +274,26 @@ function Experience({ t }) {
                     {dataModal.frameWork.map((val, i) => {
                       return (
                         <div key={i}>
-                          <div className="flex flex-wrap gap-3 pl-5">
-                            <p className="">{val.head}: </p>
-                            {val.list.map((val, i) => {
-                              return (
-                                <div
-                                  key={i}
-                                  className="flex flex-col items-center gap-y-2"
-                                >
-                                  <img
-                                    src={val.icon}
-                                    alt=""
-                                    className="h-5 md:h-7"
-                                  />
-                                  <p className="text-xs">{val.text}</p>
-                                </div>
-                              );
-                            })}
+                          <div className="flex  gap-3 pl-5">
+                            <p className="flex-shrink-0">{val.head}: </p>
+
+                            <div className="flex-grow flex flex-wrap gap-3">
+                              {val.list.map((val, i) => {
+                                return (
+                                  <div
+                                    key={i}
+                                    className="flex flex-col items-center gap-y-2"
+                                  >
+                                    <img
+                                      src={val.icon}
+                                      alt=""
+                                      className="h-5 md:h-7"
+                                    />
+                                    <p className="text-xs">{val.text}</p>
+                                  </div>
+                                );
+                              })}
+                            </div>
                           </div>
                         </div>
                       );
