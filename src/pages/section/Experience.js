@@ -23,7 +23,7 @@ function Experience({ t }) {
   const ExpLs = [
     {
       companyName: "Wadil Aqeeq",
-      period: "FREELAND",
+      period: "FREELANCE",
       // position: "Front-End Developer",
       contentLs: [
         {
