@@ -1,31 +1,28 @@
 import React from "react";
 import { withTranslation } from "react-i18next";
-import imgProfile from "../../assets/profile.jpg";
 import { useCurrentLang } from "../../services/function";
 
-// import Slider from "react-slick";
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
+// import imgProfile from "../../assets/profile.jpg";
+import resumeTh from "../../assets/pdf/ihsan-th.pdf";
+import resumeEn from "../../assets/pdf/ihsan-en.pdf";
+
+import SlideIMG from "./SlideIMG";
+import ErrorBoundary from "../components/ErrorBoundary";
 
 function Information({ t }) {
   const currentLang = useCurrentLang();
 
-  // const settings = {
-  //   dots: true,
-  //   infinite: true,
-  //   speed: 500,
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1,
-  // };
-
   return (
     <div className="bg-custom-300 flex flex-col lg:flex-row pb-10 lg:pb-0 lg:pt-[85px]">
-      <div className="flex-shrink-0">
-        <img
+      <div className="flex-shrink-0 w-screen lg:w-auto lg:h-[calc(100svh-85px)] aspect-[3/4]">
+        <ErrorBoundary>
+          <SlideIMG />
+        </ErrorBoundary>
+        {/* <img
           src={imgProfile}
           alt=""
           className="w-full lg:w-auto lg:h-[calc(100svh-85px)] object-contain"
-        />
+        /> */}
       </div>
       <div className="text-white flex-grow flex flex-col justify-center items-center gap-y-5 mt-10 lg:mt-0">
         <div className="w-10/12 lg:w-6/12 flex justify-start">
@@ -48,32 +45,24 @@ function Information({ t }) {
             Back-End Developer / Full-Stack Developer
           </p>
         </div>
-      </div>
-
-      {/* <div className="w-screen">
-        <div className="slider-section-one md:mx-0 bg-gray-100 pt-5 pb-8 mt-2 rounded-md officer-slide">
-          <Slider {...settings}>
-            <div>
-              <h3 className="bg-green-500">1</h3>
-            </div>
-            <div>
-              <h3>2</h3>
-            </div>
-            <div>
-              <h3>3</h3>
-            </div>
-            <div>
-              <h3>4</h3>
-            </div>
-            <div>
-              <h3>5</h3>
-            </div>
-            <div>
-              <h3>6</h3>
-            </div>
-          </Slider>
+        <div className="flex gap-x-5">
+          {[
+            { name: "Resume (TH)", fileName: "ihsan-th", file: resumeTh },
+            { name: "Resume (EN)", fileName: "ihsan-en", file: resumeEn },
+          ].map((val, i) => {
+            return (
+              <a
+                key={i}
+                className="bg-white py-2 px-4 rounded-xl text-custom-500 hover:cursor-pointer hover:bg-gray-200 duration-300"
+                href={val.file}
+                download={val.fileName}
+              >
+                {val.name}
+              </a>
+            );
+          })}
         </div>
-      </div> */}
+      </div>
     </div>
   );
 }
