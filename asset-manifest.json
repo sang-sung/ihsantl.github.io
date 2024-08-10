@@ -1,16 +1,20 @@
 {
   "files": {
-    "main.css": "/ihsantl.github.io/static/css/main.84456a83.css",
-    "main.js": "/ihsantl.github.io/static/js/main.304e906f.js",
+    "main.css": "/ihsantl.github.io/static/css/main.a3729c7f.css",
+    "main.js": "/ihsantl.github.io/static/js/main.38552fd8.js",
     "static/js/453.f19e9853.chunk.js": "/ihsantl.github.io/static/js/453.f19e9853.chunk.js",
     "static/media/NotoSans-Italic-VariableFont_wdth,wght.ttf": "/ihsantl.github.io/static/media/NotoSans-Italic-VariableFont_wdth,wght.628d4779d07f4e15066b.ttf",
+    "static/media/profile2.jpg": "/ihsantl.github.io/static/media/profile2.e54c1c8eb9fe1b66b241.jpg",
     "static/media/NotoSans-VariableFont_wdth,wght.ttf": "/ihsantl.github.io/static/media/NotoSans-VariableFont_wdth,wght.b1d0ab70303caea663db.ttf",
+    "static/media/profile3.jpg": "/ihsantl.github.io/static/media/profile3.2767df309bbfa539eb7f.jpg",
     "static/media/profile.jpg": "/ihsantl.github.io/static/media/profile.c6c3415f98c9958536a4.jpg",
     "static/media/logo-mysql.png": "/ihsantl.github.io/static/media/logo-mysql.0fa9a5734e3c34ad8218.png",
     "static/media/NotoSansThai-VariableFont_wdth,wght.ttf": "/ihsantl.github.io/static/media/NotoSansThai-VariableFont_wdth,wght.1e59d809989f6b9c505a.ttf",
     "static/media/logo-tailwind.png": "/ihsantl.github.io/static/media/logo-tailwind.3549d9e451d7abb96934.png",
     "static/media/logo-postgre.png": "/ihsantl.github.io/static/media/logo-postgre.b096aefcd61ba2e9e5dc.png",
     "static/media/logo-vscode.png": "/ihsantl.github.io/static/media/logo-vscode.dfe087d19ba19c811e0f.png",
+    "static/media/ihsan-th.pdf": "/ihsantl.github.io/static/media/ihsan-th.f31f8ed3865a6d03ad1a.pdf",
+    "static/media/ihsan-en.pdf": "/ihsantl.github.io/static/media/ihsan-en.6ac0d4c56121b9f5bf47.pdf",
     "static/media/logo-sql.png": "/ihsantl.github.io/static/media/logo-sql.28d84a9e6692666b4a0a.png",
     "static/media/logo-MySQLWorkbenc.png": "/ihsantl.github.io/static/media/logo-MySQLWorkbenc.5ba25418997c84c2193c.png",
     "static/media/logo-postman.png": "/ihsantl.github.io/static/media/logo-postman.1378e285c07567dbba33.png",
@@ -22,12 +26,12 @@
     "static/media/logo-python.png": "/ihsantl.github.io/static/media/logo-python.91fe66c93d19d67edfc8.png",
     "static/media/logo-git.png": "/ihsantl.github.io/static/media/logo-git.7d664489ed331806ddc8.png",
     "index.html": "/ihsantl.github.io/index.html",
-    "main.84456a83.css.map": "/ihsantl.github.io/static/css/main.84456a83.css.map",
-    "main.304e906f.js.map": "/ihsantl.github.io/static/js/main.304e906f.js.map",
+    "main.a3729c7f.css.map": "/ihsantl.github.io/static/css/main.a3729c7f.css.map",
+    "main.38552fd8.js.map": "/ihsantl.github.io/static/js/main.38552fd8.js.map",
     "453.f19e9853.chunk.js.map": "/ihsantl.github.io/static/js/453.f19e9853.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.84456a83.css",
-    "static/js/main.304e906f.js"
+    "static/css/main.a3729c7f.css",
+    "static/js/main.38552fd8.js"
   ]
 }
