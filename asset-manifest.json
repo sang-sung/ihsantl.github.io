@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ihsantl.github.io/static/css/main.a3729c7f.css",
-    "main.js": "/ihsantl.github.io/static/js/main.38552fd8.js",
+    "main.css": "/ihsantl.github.io/static/css/main.8d3d3dc6.css",
+    "main.js": "/ihsantl.github.io/static/js/main.16e29190.js",
     "static/js/453.f19e9853.chunk.js": "/ihsantl.github.io/static/js/453.f19e9853.chunk.js",
     "static/media/NotoSans-Italic-VariableFont_wdth,wght.ttf": "/ihsantl.github.io/static/media/NotoSans-Italic-VariableFont_wdth,wght.628d4779d07f4e15066b.ttf",
     "static/media/profile2.jpg": "/ihsantl.github.io/static/media/profile2.e54c1c8eb9fe1b66b241.jpg",
@@ -26,12 +26,12 @@
     "static/media/logo-python.png": "/ihsantl.github.io/static/media/logo-python.91fe66c93d19d67edfc8.png",
     "static/media/logo-git.png": "/ihsantl.github.io/static/media/logo-git.7d664489ed331806ddc8.png",
     "index.html": "/ihsantl.github.io/index.html",
-    "main.a3729c7f.css.map": "/ihsantl.github.io/static/css/main.a3729c7f.css.map",
-    "main.38552fd8.js.map": "/ihsantl.github.io/static/js/main.38552fd8.js.map",
+    "main.8d3d3dc6.css.map": "/ihsantl.github.io/static/css/main.8d3d3dc6.css.map",
+    "main.16e29190.js.map": "/ihsantl.github.io/static/js/main.16e29190.js.map",
     "453.f19e9853.chunk.js.map": "/ihsantl.github.io/static/js/453.f19e9853.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a3729c7f.css",
-    "static/js/main.38552fd8.js"
+    "static/css/main.8d3d3dc6.css",
+    "static/js/main.16e29190.js"
   ]
 }
