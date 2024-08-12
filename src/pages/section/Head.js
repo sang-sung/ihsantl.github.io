@@ -32,7 +32,7 @@ const Head = ({ t }) => {
       <div className="hidden fixed z-50 w-full bg-custom-400 lg:flex justify-center py-5 shadow-xl">
         <div className="container px-5 flex text-white">
           <div className="w-[200px]">
-            <a href="#" className="text-2xl uppercase font-extrabold">
+            <a href="#" className="text-xl xl:text-2xl uppercase font-semibold xl:font-extrabold">
               {t("ihsan taleh")}
             </a>
           </div>

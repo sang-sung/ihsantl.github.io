@@ -7,17 +7,15 @@ import resumeTh from "../../assets/pdf/ihsan-th.pdf";
 import resumeEn from "../../assets/pdf/ihsan-en.pdf";
 
 import SlideIMG from "./SlideIMG";
-import ErrorBoundary from "../components/ErrorBoundary";
+// import ErrorBoundary from "../components/ErrorBoundary";
 
 function Information({ t }) {
   const currentLang = useCurrentLang();
 
   return (
     <div className="bg-custom-300 flex flex-col lg:flex-row pb-10 lg:pb-0 lg:pt-[85px]">
-      <div className="flex-shrink-0 w-screen lg:w-auto lg:h-[calc(100svh-85px)] aspect-[3/4]">
-        <ErrorBoundary>
-          <SlideIMG />
-        </ErrorBoundary>
+      <div className="flex-shrink-0 w-screen lg:w-[calc((100svh-85px)*3/4)] max-w-[100vw] lg:h-[calc(100svh-85px)]">
+        <SlideIMG />
         {/* <img
           src={imgProfile}
           alt=""
@@ -32,16 +30,16 @@ function Information({ t }) {
           <div
             className={`uppercase font-bold italic ${
               currentLang == "en"
-                ? "tracking-[0.5rem] md:tracking-[2rem]"
-                : "tracking-[0.1rem] md:tracking-[0.5rem]"
+                ? "tracking-[0.5rem] xl:tracking-[2rem]"
+                : "tracking-[0.1rem] xl:tracking-[0.5rem]"
             }`}
           >
-            <p className="text-[40px] md:text-[80px]">{t("ihsan")}</p>
-            <p className="text-[40px] md:text-[80px] pl-20">{t("taleh")}</p>
+            <p className="text-[40px] xl:text-[80px]">{t("ihsan")}</p>
+            <p className="text-[40px] xl:text-[80px] pl-20">{t("taleh")}</p>
           </div>
         </div>
         <div className="">
-          <p className="text-[18px] md:text-[30px] italic text-center">
+          <p className="text-[18px] xl:text-[30px] italic text-center">
             Back-End Developer / Full-Stack Developer
           </p>
         </div>

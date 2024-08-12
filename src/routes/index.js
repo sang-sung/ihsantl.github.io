@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, lazy } from "react";
 import {
   BrowserRouter as Router,
   Routes,
@@ -6,8 +6,8 @@ import {
   Navigate,
 } from "react-router-dom";
 
-import NoMatch from "../pages/NoMatch";
-import Main from "../pages/Main";
+const NoMatch = lazy(() => import("../pages/NoMatch"));
+const Main = lazy(() => import("../pages/Main"));
 
 export default function index() {
   return (
