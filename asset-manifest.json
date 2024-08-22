@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/ihsantl.github.io/static/css/main.c532b94b.css",
-    "main.js": "/ihsantl.github.io/static/js/main.b09f6496.js",
+    "main.css": "/ihsantl.github.io/static/css/main.e84d4085.css",
+    "main.js": "/ihsantl.github.io/static/js/main.c40cdd51.js",
     "static/js/171.eeca5648.chunk.js": "/ihsantl.github.io/static/js/171.eeca5648.chunk.js",
     "static/css/498.c3a3b0ec.chunk.css": "/ihsantl.github.io/static/css/498.c3a3b0ec.chunk.css",
-    "static/js/498.2f1248e1.chunk.js": "/ihsantl.github.io/static/js/498.2f1248e1.chunk.js",
+    "static/js/498.7cccbe26.chunk.js": "/ihsantl.github.io/static/js/498.7cccbe26.chunk.js",
     "static/js/453.f19e9853.chunk.js": "/ihsantl.github.io/static/js/453.f19e9853.chunk.js",
     "static/js/117.3579ede4.chunk.js": "/ihsantl.github.io/static/js/117.3579ede4.chunk.js",
     "static/js/49.aa304bc6.chunk.js": "/ihsantl.github.io/static/js/49.aa304bc6.chunk.js",
@@ -31,17 +31,17 @@
     "static/media/logo-python.png": "/ihsantl.github.io/static/media/logo-python.91fe66c93d19d67edfc8.png",
     "static/media/logo-git.png": "/ihsantl.github.io/static/media/logo-git.7d664489ed331806ddc8.png",
     "index.html": "/ihsantl.github.io/index.html",
-    "main.c532b94b.css.map": "/ihsantl.github.io/static/css/main.c532b94b.css.map",
-    "main.b09f6496.js.map": "/ihsantl.github.io/static/js/main.b09f6496.js.map",
+    "main.e84d4085.css.map": "/ihsantl.github.io/static/css/main.e84d4085.css.map",
+    "main.c40cdd51.js.map": "/ihsantl.github.io/static/js/main.c40cdd51.js.map",
     "171.eeca5648.chunk.js.map": "/ihsantl.github.io/static/js/171.eeca5648.chunk.js.map",
     "498.c3a3b0ec.chunk.css.map": "/ihsantl.github.io/static/css/498.c3a3b0ec.chunk.css.map",
-    "498.2f1248e1.chunk.js.map": "/ihsantl.github.io/static/js/498.2f1248e1.chunk.js.map",
+    "498.7cccbe26.chunk.js.map": "/ihsantl.github.io/static/js/498.7cccbe26.chunk.js.map",
     "453.f19e9853.chunk.js.map": "/ihsantl.github.io/static/js/453.f19e9853.chunk.js.map",
     "117.3579ede4.chunk.js.map": "/ihsantl.github.io/static/js/117.3579ede4.chunk.js.map",
     "49.aa304bc6.chunk.js.map": "/ihsantl.github.io/static/js/49.aa304bc6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c532b94b.css",
-    "static/js/main.b09f6496.js"
+    "static/css/main.e84d4085.css",
+    "static/js/main.c40cdd51.js"
   ]
 }
