@@ -23,7 +23,7 @@ const SlideIMG = () => {
           <img
             src={each}
             alt="Slide Image"
-            className="w-screen lg:w-auto lg:h-[calc(100svh-85px)] object-contain"
+            className="w-screen lg:w-auto lg:h-[calc(100svh-85px)] max-h-[1200px] object-contain"
           />
         </div>
       ))}

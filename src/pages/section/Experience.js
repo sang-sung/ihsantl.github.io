@@ -54,7 +54,7 @@ function Experience({ t }) {
     },
     {
       companyName: t("goody"),
-      period: t("oct2023_present"),
+      period: t("oct2023_aug2024"),
       position: "Front-End Developer",
       contentLs: [
         {

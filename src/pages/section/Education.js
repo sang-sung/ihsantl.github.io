@@ -86,44 +86,45 @@ function Education({ t }) {
   ];
 
   return (
-    <div className="flex flex-col justify-center items-start">
-      <HeaderTitle title={t("education")} />
+    <div className="flex justify-center">
+      <div className="container flex flex-col justify-center items-start">
+        <HeaderTitle title={t("education")} />
 
-      <div className="mt-5 flex flex-col lg:flex-row gap-x-5 gap-y-5 w-full">
-        <div className="flex-shrink-0 border-l-8 border-custom-900 min-h-[300px] flex flex-col gap-y-5">
-          {items.map((val, i) => (
-            <div
-              key={i}
-              className="pl-[20px] relative w-full lg:w-fit cursor-pointer"
-              onClick={() => setOpenIndex(openIndex === i ? null : i)}
-            >
-              <div className="h-5 w-5 bg-custom-900 border-4 border-custom-300 rounded-full absolute top-[-1px] left-[-13px] lg:left-[-15px]"></div>
+        <div className="mt-5 flex flex-col lg:flex-row gap-x-5 gap-y-5 w-full">
+          <div className="flex-shrink-0 border-l-8 border-custom-900 min-h-[300px] flex flex-col gap-y-5">
+            {items.map((val, i) => (
               <div
-                className={`border-2 border-custom-500 rounded-xl p-2 w-full lg:w-[500px] ${
-                  openIndex == i ? "bg-custom-200" : ""
-                }`}
+                key={i}
+                className="pl-[20px] relative w-full lg:w-fit cursor-pointer"
+                onClick={() => setOpenIndex(openIndex === i ? null : i)}
               >
-                <div>
-                  <p className="font-bold">{val.period}</p>
-                  <p className="italic">{val.name}</p>
-                  {val.content1.map((val, i) => {
-                    return (
-                      <p key={i}>
-                        {val.title && val.title + ": "}
-                        {val.subTitle}
+                <div className="h-5 w-5 bg-custom-900 border-4 border-custom-300 rounded-full absolute top-[-1px] left-[-13px] lg:left-[-15px]"></div>
+                <div
+                  className={`border-2 border-custom-500 rounded-xl p-2 w-full lg:w-[500px] ${
+                    openIndex == i ? "bg-custom-200" : ""
+                  }`}
+                >
+                  <div>
+                    <p className="font-bold">{val.period}</p>
+                    <p className="italic">{val.name}</p>
+                    {val.content1.map((val, i) => {
+                      return (
+                        <p key={i}>
+                          {val.title && val.title + ": "}
+                          {val.subTitle}
+                        </p>
+                      );
+                    })}
+                    {((openIndex == null
+                      ? showMessages[i]
+                      : showMessages[i] && openIndex !== i) ||
+                      true) && (
+                      <p className="text-xs italic mt-2 text-end">
+                        {t("click_for_moreinformation")}
                       </p>
-                    );
-                  })}
-                  {((openIndex == null
-                    ? showMessages[i]
-                    : showMessages[i] && openIndex !== i) ||
-                    true) && (
-                    <p className="text-xs italic mt-2 text-end">
-                      {t("click_for_moreinformation")}
-                    </p>
-                  )}
-                </div>
-                {/* <div
+                    )}
+                  </div>
+                  {/* <div
                   className={`w-full overflow-hidden transition-all duration-700 ${
                     openIndex === i
                       ? "max-h-[1000px] opacity-100"
@@ -132,41 +133,42 @@ function Education({ t }) {
                 >
                   {val.content2}
                 </div> */}
+                </div>
               </div>
-            </div>
-          ))}
-        </div>
-        <div className="flex-grow flex items-start justify-start">
-          {openIndex !== null && (
-            <div className="flex flex-col lg:gap-y-3">
-              <p className="text-xl lg:text-2xl font-bold">
-                {items[openIndex].name}{" "}
-              </p>
-              <p className="font-bold italic">{items[openIndex].period} </p>
-              {items[openIndex].content1.map((val, i) => {
-                return (
-                  <p key={i}>
-                    {val.title && val.title + ": "}
-                    {val.subTitle}
-                  </p>
-                );
-              })}
-
-              <p className="mt-3 text-lg lg:text-xl font-bold">
-                {t("performance")}
-              </p>
-              <ul className="list-disc pl-10 flex flex-col lg:gap-y-3">
-                {items[openIndex].content2.map((val, i) => {
+            ))}
+          </div>
+          <div className="flex-grow flex items-start justify-start">
+            {openIndex !== null && (
+              <div className="flex flex-col lg:gap-y-3">
+                <p className="text-xl lg:text-2xl font-bold">
+                  {items[openIndex].name}{" "}
+                </p>
+                <p className="font-bold italic">{items[openIndex].period} </p>
+                {items[openIndex].content1.map((val, i) => {
                   return (
-                    <li key={i}>
+                    <p key={i}>
                       {val.title && val.title + ": "}
                       {val.subTitle}
-                    </li>
+                    </p>
                   );
                 })}
-              </ul>
-            </div>
-          )}
+
+                <p className="mt-3 text-lg lg:text-xl font-bold">
+                  {t("performance")}
+                </p>
+                <ul className="list-disc pl-10 flex flex-col lg:gap-y-3">
+                  {items[openIndex].content2.map((val, i) => {
+                    return (
+                      <li key={i}>
+                        {val.title && val.title + ": "}
+                        {val.subTitle}
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </div>
