@@ -80,7 +80,7 @@ function Experience({ t }) {
     {
       companyName: t("soat"),
       period: t("jul2022_jul2023"),
-      position: "Full-Stack Developer",
+      position: "Programer",
       contentLs: [
         {
           head: t("responsibilities"),

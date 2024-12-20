@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -13,6 +13,8 @@ export function Modal({
     setStateModal(!stateModal);
   };
 
+  const modalContentRef = useRef(null);
+
   useEffect(() => {
     const handleEscape = (event) => {
       if (event.key === "Escape") {
@@ -26,6 +28,12 @@ export function Modal({
     };
   }, [setStateModal]);
 
+  useEffect(() => {
+    if (stateModal && modalContentRef.current) {
+      modalContentRef.current.scrollTo(0, 0);
+    }
+  }, [stateModal]);
+
   return (
     <div
       className={`fixed top-0 left-0 z-50 w-screen min-h-[100svh] h-full bg-black/30 flex justify-center items-center 
@@ -37,14 +45,18 @@ export function Modal({
         className={`relative z-50 flex justify-center p-5
         w-4/5 min-h-[20svh] max-h-[95svh] bg-white rounded-2xl`}
       >
-        <div className="flex-grow max-h-[95svh] overflow-auto">{children}</div>
+        <div
+          ref={modalContentRef}
+          className="flex-grow max-h-[95svh] overflow-auto"
+        >
+          {children}
+        </div>
         {showClose && (
           <div className="absolute top-2 right-2 rounded-full p-1 bg-white">
             <div
               className="flex items-center justify-center overflow-hidden text-sm bg-gray-300 rounded-full w-7 h-7 cursor-pointer"
               onClick={toggleModal}
             >
-              {/* x */}
               <FontAwesomeIcon icon={faXmark} className="text-white" />
             </div>
           </div>

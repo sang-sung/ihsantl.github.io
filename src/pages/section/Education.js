@@ -1,10 +1,33 @@
 import React, { useState, useEffect } from "react";
 import { withTranslation } from "react-i18next";
 import { HeaderTitle } from "../components/Components";
+import { Modal } from "../components/Modal";
+
+import c_psu_1 from "../../assets/certificate/psu-1.jpg";
+import c_pw_1 from "../../assets/certificate/pw-1.jpg";
+import c_pw_2 from "../../assets/certificate/pw-2.jpg";
+import c_pw_3 from "../../assets/certificate/pw-3.jpg";
+import c_pw_4 from "../../assets/certificate/pw-4.jpg";
+import c_pw_5 from "../../assets/certificate/pw-5.jpg";
+import c_pw_6 from "../../assets/certificate/pw-6.jpg";
+import c_pw_7 from "../../assets/certificate/pw-7.jpg";
+import c_pw_8 from "../../assets/certificate/pw-8.jpg";
+import c_pw_9 from "../../assets/certificate/pw-9.jpg";
+import c_pw_10 from "../../assets/certificate/pw-10.jpg";
+import c_usw_1 from "../../assets/certificate/usw-1.jpg";
+import c_usw_2 from "../../assets/certificate/usw-2.jpg";
+import c_usw_3 from "../../assets/certificate/usw-3.jpg";
+import c_usw_4 from "../../assets/certificate/usw-4.jpg";
+import c_buke_1 from "../../assets/certificate/buke-1.jpg";
+import c_buke_2 from "../../assets/certificate/buke-2.jpg";
+import c_buke_3 from "../../assets/certificate/buke-3.jpg";
+import c_buke_4 from "../../assets/certificate/buke-4.jpg";
 
 function Education({ t }) {
   const [openIndex, setOpenIndex] = useState(null);
   const [showMessages, setShowMessages] = useState([]);
+
+  const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
     // Initialize showMessages based on the length of items
@@ -51,6 +74,7 @@ function Education({ t }) {
         { subTitle: t("psu_2") },
         { subTitle: t("psu_3") },
       ],
+      cetificate: [c_psu_1],
     },
     {
       name: t("pw"),
@@ -64,6 +88,18 @@ function Education({ t }) {
         { subTitle: t("pw_2") },
         { subTitle: t("pw_3") },
       ],
+      cetificate: [
+        c_pw_1,
+        c_pw_2,
+        c_pw_3,
+        c_pw_4,
+        c_pw_5,
+        c_pw_6,
+        c_pw_7,
+        c_pw_8,
+        c_pw_9,
+        c_pw_10,
+      ],
     },
     {
       name: t("usw"),
@@ -73,6 +109,7 @@ function Education({ t }) {
         { title: t("gpa"), subTitle: "3.70" },
       ],
       content2: [{ subTitle: t("usw_1") }],
+      cetificate: [c_usw_1, c_usw_2, c_usw_3, c_usw_4],
     },
     {
       name: t("buke_school"),
@@ -82,6 +119,7 @@ function Education({ t }) {
         { title: t("gpa"), subTitle: "3.70" },
       ],
       content2: [{ subTitle: t("buke_1") }],
+      cetificate: [c_buke_1, c_buke_2, c_buke_3, c_buke_4],
     },
   ];
 
@@ -91,7 +129,7 @@ function Education({ t }) {
         <HeaderTitle title={t("education")} />
 
         <div className="mt-5 flex flex-col lg:flex-row gap-x-5 gap-y-5 w-full">
-          <div className="flex-shrink-0 border-l-8 border-custom-900 min-h-[300px] flex flex-col gap-y-5">
+          <div className="border-l-8 border-custom-900 min-h-[300px] flex flex-col gap-y-5">
             {items.map((val, i) => (
               <div
                 key={i}
@@ -101,7 +139,7 @@ function Education({ t }) {
                 <div className="h-5 w-5 bg-custom-900 border-4 border-custom-300 rounded-full absolute top-[-1px] left-[-13px] lg:left-[-15px]"></div>
                 <div
                   className={`border-2 border-custom-500 rounded-xl p-2 w-full lg:w-[500px] ${
-                    openIndex == i ? "bg-custom-200" : ""
+                    openIndex === i ? "bg-custom-200" : ""
                   }`}
                 >
                   <div>
@@ -124,22 +162,13 @@ function Education({ t }) {
                       </p>
                     )}
                   </div>
-                  {/* <div
-                  className={`w-full overflow-hidden transition-all duration-700 ${
-                    openIndex === i
-                      ? "max-h-[1000px] opacity-100"
-                      : "max-h-0 opacity-0"
-                  }`}
-                >
-                  {val.content2}
-                </div> */}
                 </div>
               </div>
             ))}
           </div>
           <div className="flex-grow flex items-start justify-start">
             {openIndex !== null && (
-              <div className="flex flex-col lg:gap-y-3">
+              <div className="flex flex-col lg:gap-y-3 w-full">
                 <p className="text-xl lg:text-2xl font-bold">
                   {items[openIndex].name}{" "}
                 </p>
@@ -166,6 +195,22 @@ function Education({ t }) {
                     );
                   })}
                 </ul>
+                <div className="flex justify-center lg:justify-start w-full mt-4">
+                  <button className="py-2 w-[150px] rounded-xl bg-custom-500 hover:bg-custom-300 duration-150 text-white" onClick={()=>{setShowModal(!showModal)}}>
+                    {t("certificate")}
+                  </button>
+                  <Modal stateModal={showModal} setStateModal={setShowModal}>
+                    {items[openIndex].cetificate.map((val, i) => {
+                      return (
+                        <img
+                          src={val}
+                          alt="certificate"
+                          className="object-contain my-5 w-full"
+                        />
+                      );
+                    })}
+                  </Modal>
+                </div>
               </div>
             )}
           </div>
